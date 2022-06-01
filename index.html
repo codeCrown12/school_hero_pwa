@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <link rel="manifest" href="schoolhero.webmanifest">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+        }
+    </script>
 </head>
 <body class="bg-white">
     <div id="app">
